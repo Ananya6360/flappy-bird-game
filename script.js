@@ -99,10 +99,10 @@ document.addEventListener("keydown", function(event) {
 // PHONE / MOUSE
 // ===============================
 
-canvas.addEventListener("click", function() {
+canvas.addEventListener("touchstart", function(event) {
+    event.preventDefault();
     jump();
-});
-
+}, { passive: false });
 
 // ===============================
 // START BUTTON
