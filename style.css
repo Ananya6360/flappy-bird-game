@@ -36,8 +36,8 @@ body {
 #gameCanvas {
     display: block;
 
-    width: min(90vw, 60dvh);
-    height: auto;
+    width: min(92vw, calc(92dvh * 2 / 3));
+    height: min(92dvh, calc(92vw * 3 / 2));
 
     max-width: 400px;
     max-height: 600px;
@@ -46,7 +46,6 @@ body {
 
     touch-action: none;
 }
-
 
 /* =========================
    START / PLAY AGAIN BUTTON
